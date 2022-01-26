@@ -52,21 +52,23 @@ int main() {
     B.y = 30;
     
     // вычисление длины отрезка
-    int l = sqrt(pow(A.x - B.x, 2) + pow(A.y - B.y, 2));
+    int ff = pow(A.x - B.x, 2) + pow(A.y - B.y, 2)
+    int l = sqrt(ff);
     printf("%d", l); // вывод длинны отрезка
     
     // ЗАДАНИЕ 3 -----------------------------------
     int number;
     printf("\nВводи: ");
-    scanf("%x", &number); // ввод 16-ричного числа
+    scanf("%d", &number); // ввод 16-ричного числа
     
     union number_going u;
     u.number = number;
     
     // вывод значений 
+    printf("%0", u.lo.Link);
     printf("%d", u.lo.DSL);
     printf("%d", u.lo.PPP);
-    printf("%d", u.lo.Link);
+    
     
     return 0;
 }
